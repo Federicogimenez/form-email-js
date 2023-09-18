@@ -689,6 +689,9 @@ video {
 .opacity-50 {
   opacity: 0.5;
 }
+.opacity-75 {
+  opacity: 0.75;
+}
 
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
@@ -696,3 +699,16 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+#bg-video{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.page-content{
+  position: relative;
+  max-width: clamp(30rem, 75vw, 110rem);
+  z-index: 5;
+  background-color: #ffffff3a;
+}
